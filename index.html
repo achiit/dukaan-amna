@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff5f7">
+<title>Bloom & Bliss by Amna</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:linear-gradient(135deg,#fff5f7,#fbe8ed);color:#4a4a4a;min-height:100vh;padding:24px 16px;display:flex;align-items:center;justify-content:center}
+.container{width:100%;max-width:490px;background:#fff;border-radius:25px;padding:30px 22px;box-shadow:0 12px 36px #e68ca026;text-align:center}
+.profile-ring{width:112px;height:112px;border-radius:50%;padding:4px;margin:0 auto 16px;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
+.profile-photo{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;background:#fff0f4}
+h1{font-family:Georgia,serif;font-size:clamp(22px,5vw,28px);color:#30272a;margin-bottom:9px}
+.bio{font-size:14px;color:#777;line-height:1.7;margin-bottom:22px}
+.divider{height:1px;background:#f4e4e9;margin:20px 0}
+.gallery-title{font:normal 20px Georgia,serif;margin-bottom:13px;color:#573b45}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 24px}
+.gallery img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;background:#fff0f4}
+.links{display:flex;flex-direction:column;gap:12px}
+.btn{display:flex;align-items:center;justify-content:center;padding:14px 16px;background:#fff0f4;color:#c55a7d;text-decoration:none;border-radius:14px;font-weight:700;font-size:14px;border:1px solid #ffd6e0;transition:.2s}
+.btn:hover{background:#d87093;color:white;transform:translateY(-2px)}
+.btn.primary{background:#d87093;color:#fff;border-color:#d87093}
+.btn.primary:hover{background:#c55a7d}
+.foot{margin-top:25px;font-size:12px;color:#aaa}
+.tip{font-size:11px;color:#a38d95;line-height:1.5;margin-top:12px}
+@media(min-width:520px){.container{padding:34px 30px}}
+</style>
+</head>
+<body>
+<main class="container">
+  <div class="profile-ring">
+    <!-- Apni profile photo ko profile.jpg naam dekar is HTML ke saath same folder mein rakhein -->
+    <img class="profile-photo" src="profile.jpg" alt="Bloom & Bliss by Amna profile photo"
+         onerror="this.style.display='none';this.parentElement.style.background='#fbe8ed';this.parentElement.innerHTML='<div style=&quot;height:100%;display:grid;place-items:center;color:#d87093;font:bold 25px Georgia,serif&quot;>B&amp;B</div>'">
+  </div>
+  <h1>Bloom &amp; Bliss by Amna</h1>
+  <p class="bio">✨ Welcome to my creative world!<br>Lifestyle | Creativity | Daily Inspiration</p>
+
+  <div class="divider"></div>
+  <h2 class="gallery-title">A little gallery ♡</h2>
+  <!-- Apni 3 photos ko photo1.jpg, photo2.jpg, photo3.jpg naam dein aur isi folder mein rakhein -->
+  <div class="gallery">
+    <img src="photo1.jpg" alt="Bloom & Bliss photo 1" onerror="this.style.display='none'">
+    <img src="photo2.jpg" alt="Bloom & Bliss photo 2" onerror="this.style.display='none'">
+    <img src="photo3.jpg" alt="Bloom & Bliss photo 3" onerror="this.style.display='none'">
+  </div>
+
+  <div class="links">
+    <a href="https://www.instagram.com/bloom_and_bliss_by_amna?dlrf=MXQ3bWt6NmU0Mjho" target="_blank" rel="noopener noreferrer" class="btn primary">📸 Follow on Instagram ↗</a>
+    <a href="https://www.instagram.com/bloom_and_bliss_by_amna?dlrf=MXQ3bWt6NmU0Mjho" target="_blank" rel="noopener noreferrer" class="btn">🛍️ Featured Products &amp; Recommendations</a>
+    <!-- Apne WhatsApp number ke saath 91XXXXXXXXXX replace karein -->
+    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="btn">💬 WhatsApp Inquiry</a>
+    <!-- Apne YouTube channel ka link yahan add karein -->
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="btn">▶️ YouTube / Latest Vlog</a>
+  </div>
+  <p class="tip">Tip: Profile photo = profile.jpg · Gallery photos = photo1.jpg, photo2.jpg, photo3.jpg<br>WhatsApp button ke liye code mein apna number set karein.</p>
+  <footer class="foot">© <span id="year"></span> Bloom &amp; Bliss by Amna · Made with ♡</footer>
+</main>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
